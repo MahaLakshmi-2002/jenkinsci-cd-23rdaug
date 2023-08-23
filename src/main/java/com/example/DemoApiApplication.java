@@ -9,13 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoApiApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(DemoApiApplication.class, args);
-	}
-	@GetMapping("/")
-	public String hai() {
-//		System.out.println("Hai Im Spring Boot");
-		return "I am Spring Boot Project";
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(DemoApiApplication.class, args);
+    }
 
+    @GetMapping("/hello")
+    public String hello() {
+        return "Hello from Spring Boot!";
+    }
 }
